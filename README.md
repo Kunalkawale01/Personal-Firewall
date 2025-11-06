@@ -81,3 +81,17 @@ So it’s user-friendly and visual.
 
       cat firewall.log
 
+## Files
+- `firewall_core.py` - core engine (rule engine, iptables helper, sniff wrapper)
+- `firewall.py` - CLI launcher (`sudo python3 firewall.py`)
+- `gui_firewall.py` - Tkinter GUI (start/stop, add/remove rules, live log)
+- `rules.json` - sample rules
+- `iptables_helper.sh` - helper to flush iptables
+- `firewall.log` - runtime log (auto-created)
+- `requirements.txt` - dependencies
+
+## Requirements
+- Linux (Ubuntu / Kali / WSL)
+- Python 3.8+
+- scapy (`pip3 install scapy`)
+- (optional) python3-tk for GUI: `sudo apt install python3-tk`
